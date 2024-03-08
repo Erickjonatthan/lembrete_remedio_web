@@ -30,13 +30,13 @@
         </ul>
     </nav>
     <div class="container">
-        <!-- Aqui é onde os lembretes do usuário serão inseridos -->
-        <div class="reminder">
-            <p><strong>Data Início:</strong> <!-- Data Início aqui --></p>
-            <p><strong>Nome do Medicamento:</strong> <!-- Nome do Medicamento aqui --></p>
-            <p><strong>Horário:</strong> <!-- Horário aqui --></p>
-            <p><strong>Dosagem:</strong> <!-- Dosagem aqui --></p>
-            <p><strong>Intervalo de Hora:</strong> <!-- Intervalo de Hora aqui --></p>
+        <!-- Modelo de lembrete -->
+        <div class="reminder-template" style="display: none;">
+            <p><strong>Data Início:</strong> <span class="start-date"></span></p>
+            <p><strong>Nome do Medicamento:</strong> <span class="medication-name"></span></p>
+            <p><strong>Horário:</strong> <span class="time"></span></p>
+            <p><strong>Dosagem:</strong> <span class="dosage"></span></p>
+            <p><strong>Intervalo de Hora:</strong> <span class="hour-interval"></span></p>
         </div>
     </div>
     <!-- Inclua o jQuery e o JavaScript do Bootstrap -->
