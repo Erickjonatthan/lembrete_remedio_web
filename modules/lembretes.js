@@ -63,3 +63,21 @@ function showNoRemindersMessage() {
 
 // Chamar a função quando a página carregar
 window.onload = () => getReminderData(0); // Começa na página 0
+
+
+
+window.onload = function() {
+    var logoutLink = document.querySelector('.dropdown-item[href="logout"]');
+    logoutLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        logout();
+    });
+};
+
+function logout() {
+    // Remova as informações de sessão do localStorage
+    localStorage.clear();
+
+    // Redirecione para a página de cadastro
+    window.location.href = 'index.html'; 
+}
